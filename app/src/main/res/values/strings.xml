@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TUPMobileApp</string>
+    <string name="welcome_student">Welcome,\nStudent!</string>
+    <string name="student_id_title">Student ID</string>
+    <string name="password_title">Password</string>
+    <string name="login_title">Login</string>
+</resources>
