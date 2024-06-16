@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tup_menu_title"
-        android:paddingTop="8dp"
-        android:textSize="20dp"
+        android:paddingTop="30dp"
+        android:textSize="20sp"
         android:text="TUP Menu"
         android:textColor="@color/tup_color"
         android:textStyle="bold"/>

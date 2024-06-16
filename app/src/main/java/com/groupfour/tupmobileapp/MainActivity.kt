@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 val dbPassword = it.child("password").value.toString()
                 if (dbPassword == password) {
                     Toast.makeText(this,"Login Successful!.", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this@MainActivity, ScheduleActivity::class.java)
+                    val intent = Intent(this, NavActivity::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this,"Invalid student ID or password.", Toast.LENGTH_SHORT).show()
