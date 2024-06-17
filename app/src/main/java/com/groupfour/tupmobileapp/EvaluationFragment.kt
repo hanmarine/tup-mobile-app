@@ -14,28 +14,32 @@ import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-class GraduationFragment : Fragment() {
-    private val months = arrayOf("January","February","March","April","May","June","July","August","September","October","November","December")
+
+class EvaluationFragment : Fragment() {
+    private val schoolyears = arrayOf("2324","2223","2122")
+    private val sems = arrayOf("Third","Second","First","Summer")
     private lateinit var printBtn: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_graduation, container, false)
+        val view = inflater.inflate(R.layout.fragment_evaluation, container, false)
         val dateN = SimpleDateFormat("MMMM dd, yyyy", Locale.getDefault()).format(Date())
         val date = view.findViewById<TextView>(R.id.curr_date)
         val currentDateText = getString(R.string.curr_date_string)
         date.text = "$currentDateText $dateN"
 
-        val selectMonths = view.findViewById<Spinner>(R.id.select_month)
-        val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, months)
-        selectMonths.adapter = arrayAdapter
-        printBtn = view.findViewById(R.id.print_button)
-        printBtn.setOnClickListener{
-            Toast.makeText(requireContext(),"Your form has been printed.", Toast.LENGTH_SHORT).show()
-        }
+        // Semester
+        val selectSY = view.findViewById<Spinner>(R.id.select_sy)
+        val arrayAdapter1 = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, schoolyears)
+        selectSY.adapter = arrayAdapter1
+
+        // School Year
+        val selectSem = view.findViewById<Spinner>(R.id.select_sem)
+        val arrayAdapter2 = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, sems)
+        selectSem.adapter = arrayAdapter2
+
         return view
     }
-
 }

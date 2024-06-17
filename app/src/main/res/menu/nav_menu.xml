@@ -5,11 +5,6 @@
 
     <group android:checkableBehavior="single">
 
-<!--    <item-->
-<!--        android:id="@+id/nav_message"-->
-<!--        android:icon="@drawable/baseline_email_24"-->
-<!--        android:title="Message"/>-->
-
     <item
         android:id="@+id/nav_calendar"
         android:icon="@drawable/baseline_calendar_month_24"
@@ -19,6 +14,16 @@
         android:id="@+id/nav_schedule"
         android:icon="@drawable/baseline_table_chart_24"
         android:title="Schedule"/>
+
+    <item
+        android:id="@+id/nav_evaluation"
+        android:icon="@drawable/baseline_fact_check_24"
+        android:title="Evaluation"/> <!-- Faculty Evaluation -->
+
+    <item
+        android:id="@+id/nav_graduation"
+        android:icon="@drawable/baseline_school_24"
+        android:title="Graduation"/> <!-- Application for Graduation -->
 
     <item
         android:id="@+id/nav_logout"

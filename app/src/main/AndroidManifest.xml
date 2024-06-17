@@ -15,16 +15,6 @@
         <activity
             android:name=".NavActivity"
             android:exported="false" />
-        <!-- Navbar here -->
-        <activity
-            android:name=".NavbarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ScheduleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MessageActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

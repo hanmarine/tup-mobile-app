@@ -6,23 +6,12 @@
     android:background="@color/content_color"
     tools:context=".GraduationFragment">
 
-    <TextView
-        android:id="@+id/application_title"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Application for Graduation"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
-
     <FrameLayout
         android:id="@+id/rectangle_container"
         android:layout_width="300dp"
         android:layout_gravity="center"
-        android:layout_height="380dp"
+        android:layout_height="340dp"
         android:background="@drawable/tup_content"
-        android:layout_marginTop="50dp"
         android:layout_marginBottom="160dp">
 
         <!-- School Year -->
@@ -35,50 +24,45 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="110dp"
-            android:importantForAutofill="no"
-            android:hint="Semester"
-            android:text="2324"
-            android:textColor="@color/tup_color"
-            android:textColorHint="@color/tup_color"
-            android:textSize="15sp"
-            android:background="@drawable/rounded_corner"
-            android:padding="15dp"
-            android:inputType="text" />
-
-        <!-- Select Month -->
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Month"
-            android:layout_marginTop="125dp"
-            android:layout_marginStart="25dp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
+        <!-- Semester -->
         <Spinner
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/select_month"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/select_sy"
             android:padding="15dp"
             android:background="@drawable/rounded_corner" />
 
-        <Button
-            android:id="@+id/print_button"
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Semester -->
+        <Spinner
             android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-            android:backgroundTint="@color/tup_color"
-            android:padding="12dp"
-            android:text="Print out"
-            android:textColor="@color/white"
-            android:textSize="12sp" />
+            android:id="@+id/select_sem"
+            android:padding="15dp"
+            android:background="@drawable/rounded_corner" />
+
+        <TextView
+            android:id="@+id/faculty_closed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Faculty Evaluation Period is closed."
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:textStyle="bold" />
 
     </FrameLayout>
 
@@ -90,6 +74,6 @@
         android:text="Current Date"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"/>
+        android:layout_marginTop="50dp"/>
 
 </FrameLayout>

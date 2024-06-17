@@ -8,12 +8,12 @@
 
     <FrameLayout
         android:id="@+id/rectangle_container"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_gravity="center"
-        android:layout_height="wrap_content"
+        android:layout_height="380dp"
         android:background="@drawable/tup_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="110dp">
+        android:layout_marginBottom="160dp">
 
     <CalendarView
         android:id="@+id/simple_calendar"
@@ -30,11 +30,12 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="170dp"
         android:layout_marginBottom="10dp"/>
 
     </FrameLayout>
 
+    <!-- Current Date -->
     <TextView
         android:id="@+id/curr_date"
         android:layout_width="match_parent"
@@ -42,7 +43,6 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:text="No Event Data"
-        android:layout_marginTop="130dp"/>
+        android:layout_marginTop="80dp"/>
 
 </FrameLayout>

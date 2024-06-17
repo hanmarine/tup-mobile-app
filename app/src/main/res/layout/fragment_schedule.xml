@@ -3,13 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScheduleFragment">
+    android:background="@color/content_color"
+    tools:context=".CalendarFragment">
 
     <TextView
-        android:id="@+id/hello_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/full_name_text_view"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Schedule Fragment"
-        android:layout_gravity="center" />
+        android:text="Welcome, Full Name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/rectangle_container"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="380dp"
+        android:background="@drawable/tup_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="160dp">
+
+        <!-- Schedule here -->
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/curr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Current Date"
+        android:layout_marginTop="120dp"/>
 
 </FrameLayout>
