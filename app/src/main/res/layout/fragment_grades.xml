@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    tools:context=".GradesFragment">
+
+    <FrameLayout
+        android:id="@+id/rectangle_container"
+        android:layout_width="300dp"
+        android:layout_gravity="center|top"
+        android:layout_height="250dp"
+        android:background="@drawable/tup_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="160dp">
+
+        <TableLayout
+            android:id="@+id/gradesTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tup_color">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/white"
+                    android:text="Course"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Units"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Grades"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rectangle_container2"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:background="@drawable/tup_content"
+        android:layout_marginTop="40dp">
+
+            <TableLayout
+                android:id="@+id/gwaTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tup_color">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:text="General Weighted Average"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+            </TableLayout>
+    </FrameLayout>
+
+    <!-- Current Date -->
+    <TextView
+        android:id="@+id/curr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Current Date"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"/>
+
+</FrameLayout>

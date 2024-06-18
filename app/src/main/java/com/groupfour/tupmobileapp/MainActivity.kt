@@ -51,8 +51,7 @@ class MainActivity : AppCompatActivity() {
                 if (dbPassword == password) {
                     Toast.makeText(this,"Login Successful.", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, NavActivity::class.java).apply {
-                        putExtra("student_id", studentID)
-                        putExtra("password", password) // passing le data
+                        putExtra("student_id", studentID) // passing le data
                     }
                     startActivity(intent)
                 } else {

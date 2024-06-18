@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_panel"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    tools:layout_editor_absoluteX = "1dp"
+    tools:layout_editor_absoluteY = "1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfileFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/tup_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <!-- Full Name -->
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Full Name Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fullname_title"
+                app:layout_constraintStart_toStartOf="@+id/fullname_title"
+                app:layout_constraintTop_toBottomOf="@+id/fullname_title" />
+
+            <TextView
+                android:id="@+id/fullname_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="36dp"
+                android:text="Full Name:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Email Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/email_title"
+                app:layout_constraintStart_toStartOf="@+id/email_title"
+                app:layout_constraintTop_toBottomOf="@+id/email_title" />
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Email:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/full_name"
+                app:layout_constraintStart_toStartOf="@+id/full_name"
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+            <!-- Birthdate -->
+            <TextView
+                android:id="@+id/bday_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Birth Date:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/email"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Birthdate Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/bday_title"
+                app:layout_constraintStart_toStartOf="@+id/bday_title"
+                app:layout_constraintTop_toBottomOf="@+id/bday_title" />
+
+            <!-- Birthplace -->
+            <TextView
+                android:id="@+id/bplace_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Birth Place:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/birthday"
+                app:layout_constraintStart_toStartOf="@+id/birthday"
+                app:layout_constraintTop_toBottomOf="@+id/birthday" />
+
+            <TextView
+                android:id="@+id/birthplace"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Birthplace Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/bplace_title"
+                app:layout_constraintStart_toStartOf="@+id/bplace_title"
+                app:layout_constraintTop_toBottomOf="@+id/bplace_title" />
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/gender_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Gender:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/birthplace"
+                app:layout_constraintStart_toStartOf="@+id/birthplace"
+                app:layout_constraintTop_toBottomOf="@+id/birthplace" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Gender Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/gender_title"
+                app:layout_constraintStart_toStartOf="@+id/gender_title"
+                app:layout_constraintTop_toBottomOf="@+id/gender_title" />
+
+            <!-- Citizenship -->
+            <TextView
+                android:id="@+id/citizenship_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Citizenship:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/gender"
+                app:layout_constraintStart_toStartOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/citizenship"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Citizen"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/citizenship_title"
+                app:layout_constraintStart_toStartOf="@+id/citizenship_title"
+                app:layout_constraintTop_toBottomOf="@+id/citizenship_title" />
+
+            <!-- Age -->
+            <TextView
+                android:id="@+id/age_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Age:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/citizenship"
+                app:layout_constraintStart_toStartOf="@+id/citizenship"
+                app:layout_constraintTop_toBottomOf="@+id/citizenship" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Age Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/age_title"
+                app:layout_constraintStart_toStartOf="@+id/age_title"
+                app:layout_constraintTop_toBottomOf="@+id/age_title" />
+
+            <!-- Height -->
+            <TextView
+                android:id="@+id/height_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Height:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/age"
+                app:layout_constraintStart_toStartOf="@+id/age"
+                app:layout_constraintTop_toBottomOf="@+id/age" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Height Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/height_title"
+                app:layout_constraintStart_toStartOf="@+id/height_title"
+                app:layout_constraintTop_toBottomOf="@+id/height_title" />
+
+            <!-- Weight -->
+            <TextView
+                android:id="@+id/weight_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Weight:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/height"
+                app:layout_constraintStart_toStartOf="@+id/height"
+                app:layout_constraintTop_toBottomOf="@+id/height" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Weight Here"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/weight_title"
+                app:layout_constraintStart_toStartOf="@+id/weight_title"
+                app:layout_constraintTop_toBottomOf="@+id/weight_title" />
+
+
+            <!-- Civil Status -->
+            <TextView
+                android:id="@+id/status_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Civil Status:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/weight"
+                app:layout_constraintStart_toStartOf="@+id/weight"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+            <TextView
+                android:id="@+id/civ_status"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Civil Status"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/status_title"
+                app:layout_constraintStart_toStartOf="@+id/status_title"
+                app:layout_constraintTop_toBottomOf="@+id/status_title" />
+
+            <!-- LRN -->
+            <TextView
+                android:id="@+id/lrn_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Learner Reference Number:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/civ_status"
+                app:layout_constraintStart_toStartOf="@+id/civ_status"
+                app:layout_constraintTop_toBottomOf="@+id/civ_status" />
+
+            <TextView
+                android:id="@+id/lrn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="LRN"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/lrn_title"
+                app:layout_constraintStart_toStartOf="@+id/lrn_title"
+                app:layout_constraintTop_toBottomOf="@+id/lrn_title" />
+
+            <!-- Cell No -->
+            <TextView
+                android:id="@+id/cell_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Cellphone Number:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/lrn"
+                app:layout_constraintStart_toStartOf="@+id/lrn"
+                app:layout_constraintTop_toBottomOf="@+id/lrn" />
+
+            <TextView
+                android:id="@+id/cell_no"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Cellphone No."
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/cell_title"
+                app:layout_constraintStart_toStartOf="@+id/cell_title"
+                app:layout_constraintTop_toBottomOf="@+id/cell_title" />
+
+            <!-- Landline No -->
+            <TextView
+                android:id="@+id/land_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Landline Number:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cell_no"
+                app:layout_constraintStart_toStartOf="@+id/cell_no"
+                app:layout_constraintTop_toBottomOf="@+id/cell_no" />
+
+            <TextView
+                android:id="@+id/land_no"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/land_title"
+                app:layout_constraintStart_toStartOf="@+id/land_title"
+                app:layout_constraintTop_toBottomOf="@+id/land_title" />
+
+            <!-- Facebook Account -->
+            <TextView
+                android:id="@+id/fb_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Facebook Account:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/land_no"
+                app:layout_constraintStart_toStartOf="@+id/land_no"
+                app:layout_constraintTop_toBottomOf="@+id/land_no" />
+
+            <TextView
+                android:id="@+id/fb_acc"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Facebook"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fb_title"
+                app:layout_constraintStart_toStartOf="@+id/fb_title"
+                app:layout_constraintTop_toBottomOf="@+id/fb_title" />
+
+            <!-- PWD -->
+            <TextView
+                android:id="@+id/pwd_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="PWD (Yes or No):"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/fb_acc"
+                app:layout_constraintStart_toStartOf="@+id/fb_acc"
+                app:layout_constraintTop_toBottomOf="@+id/fb_acc" />
+
+            <TextView
+                android:id="@+id/pwd_status"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="PWD"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/pwd_title"
+                app:layout_constraintStart_toStartOf="@+id/pwd_title"
+                app:layout_constraintTop_toBottomOf="@+id/pwd_title" />
+
+            <!-- Indigenous People -->
+            <TextView
+                android:id="@+id/indi_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Indigenous People (Yes or No):"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/pwd_status"
+                app:layout_constraintStart_toStartOf="@+id/pwd_status"
+                app:layout_constraintTop_toBottomOf="@+id/pwd_status" />
+
+            <TextView
+                android:id="@+id/indigenous"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menu_input"
+                android:padding="10dp"
+                android:text="Indigenous"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/indi_title"
+                app:layout_constraintStart_toStartOf="@+id/indi_title"
+                app:layout_constraintTop_toBottomOf="@+id/indi_title" />
+
+            <!-- Current Date -->
+            <TextView
+                android:id="@+id/curr_date"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="30dp"
+                android:text="Current Date"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/indigenous"
+                app:layout_constraintStart_toStartOf="@+id/indigenous"
+                app:layout_constraintTop_toBottomOf="@+id/indigenous" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

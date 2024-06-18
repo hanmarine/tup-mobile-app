@@ -22,27 +22,28 @@ class NavActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_nav)
 
-        // Retrieve data from Intent
+        // Retrieve data
         val studentID = intent.getStringExtra("student_id")
-        val password = intent.getStringExtra("password")
 
-        // Create a Bundle to pass data to the fragment
+        // Bundle le data
         val bundle = Bundle().apply {
             putString("student_id", studentID)
-            putString("password", password)
         }
 
-        // Pass data to ScheduleFragment
+        // Pass data to fragments
         val scheduleFragment = ScheduleFragment().apply {
             arguments = bundle
         }
         val enrollFragment = EnrollFragment().apply {
             arguments = bundle
         }
-//        val profileFragment = ProfileFragment().apply {
-//            arguments = bundle
-//        }
+        val profileFragment = ProfileFragment().apply {
+            arguments = bundle
+        }
         val passFragment = PassFragment().apply {
+            arguments = bundle
+        }
+        val gradesFragment = GradesFragment().apply {
             arguments = bundle
         }
 
@@ -68,6 +69,9 @@ class NavActivity : AppCompatActivity() {
                 R.id.nav_evaluation -> replaceFragment(EvaluationFragment(), getString(R.string.faculty_title))
                 R.id.nav_pass -> replaceFragment(passFragment, getString(R.string.password_title))
                 R.id.nav_enroll -> replaceFragment(enrollFragment, getString(R.string.enroll_title))
+                R.id.nav_profile -> replaceFragment(profileFragment, getString(R.string.profile_title))
+                R.id.nav_message -> replaceFragment(MessageFragment(), getString(R.string.message_title))
+                R.id.nav_grades -> replaceFragment(gradesFragment, getString(R.string.grades_title))
                 R.id.nav_logout -> {
                     val logoutIntent = Intent(this, MainActivity::class.java)
                     startActivity(logoutIntent)

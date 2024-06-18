@@ -11,7 +11,7 @@
 
     <!-- Titles -->
     <string name="message_title">Message</string>
-    <string name="profile_title">Profile</string>
+    <string name="profile_title">Student Profile</string>
     <string name="enroll_title">Enrollment</string>
     <string name="sched_title">Schedule</string>
     <string name="grades_title">Grades</string>
