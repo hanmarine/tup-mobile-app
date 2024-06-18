@@ -34,8 +34,6 @@ class ScheduleFragment : Fragment() {
         val currentDateText = getString(R.string.curr_date_string)
         date.text = "$currentDateText $dateN"
 
-
-        // To fetch the full name
         fullNameTextView = view.findViewById(R.id.full_name_text_view)
         val studentID = arguments?.getString("student_id")
         if (studentID != null) {

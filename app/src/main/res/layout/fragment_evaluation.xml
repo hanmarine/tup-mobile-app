@@ -16,7 +16,7 @@
 
         <!-- School Year -->
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="School Year"
             android:layout_marginTop="25dp"
@@ -32,10 +32,10 @@
             android:layout_marginBottom="80dp"
             android:id="@+id/select_sy"
             android:padding="15dp"
-            android:background="@drawable/rounded_corner" />
+            android:background="@drawable/menu_input" />
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Month"
             android:layout_marginTop="135dp"
@@ -51,7 +51,7 @@
             android:layout_gravity="center"
             android:id="@+id/select_sem"
             android:padding="15dp"
-            android:background="@drawable/rounded_corner" />
+            android:background="@drawable/menu_input" />
 
         <TextView
             android:id="@+id/faculty_closed"

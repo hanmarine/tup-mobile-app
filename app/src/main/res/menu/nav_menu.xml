@@ -6,14 +6,39 @@
     <group android:checkableBehavior="single">
 
     <item
-        android:id="@+id/nav_calendar"
-        android:icon="@drawable/baseline_calendar_month_24"
-        android:title="Calendar"/>
+        android:id="@+id/nav_message"
+        android:icon="@drawable/baseline_email_24"
+        android:title="Message"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/nav_enroll"
+        android:icon="@drawable/baseline_edit_note_24"
+        android:title="Enrollment"/>
 
     <item
         android:id="@+id/nav_schedule"
         android:icon="@drawable/baseline_table_chart_24"
         android:title="Schedule"/>
+
+    <item
+        android:id="@+id/nav_grades"
+        android:icon="@drawable/baseline_task_24"
+        android:title="Grades"/>
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="Calendar"/>
+
+    <item
+        android:id="@+id/nav_pass"
+        android:icon="@drawable/baseline_password_24"
+        android:title="Password"/>
 
     <item
         android:id="@+id/nav_evaluation"
@@ -25,11 +50,16 @@
         android:icon="@drawable/baseline_school_24"
         android:title="Graduation"/> <!-- Application for Graduation -->
 
-    <item
-        android:id="@+id/nav_logout"
-        android:icon="@drawable/baseline_logout_24"
-        android:title="Logout"/>
-
     </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Log Out"/>
+        </menu>
+    </item>
 
 </menu>

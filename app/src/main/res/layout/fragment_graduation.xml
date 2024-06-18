@@ -6,28 +6,17 @@
     android:background="@color/content_color"
     tools:context=".GraduationFragment">
 
-    <TextView
-        android:id="@+id/application_title"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Application for Graduation"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
-
     <FrameLayout
         android:id="@+id/rectangle_container"
         android:layout_width="300dp"
         android:layout_gravity="center"
         android:layout_height="380dp"
         android:background="@drawable/tup_content"
-        android:layout_marginTop="50dp"
         android:layout_marginBottom="160dp">
 
         <!-- School Year -->
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="School Year"
             android:layout_marginTop="25dp"
@@ -43,16 +32,16 @@
             android:importantForAutofill="no"
             android:hint="Semester"
             android:text="2324"
-            android:textColor="@color/tup_color"
-            android:textColorHint="@color/tup_color"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
             android:textSize="15sp"
-            android:background="@drawable/rounded_corner"
+            android:background="@drawable/menu_input"
             android:padding="15dp"
             android:inputType="text" />
 
         <!-- Select Month -->
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Month"
             android:layout_marginTop="125dp"
@@ -66,7 +55,7 @@
             android:layout_gravity="center"
             android:id="@+id/select_month"
             android:padding="15dp"
-            android:background="@drawable/rounded_corner" />
+            android:background="@drawable/menu_input" />
 
         <Button
             android:id="@+id/print_button"

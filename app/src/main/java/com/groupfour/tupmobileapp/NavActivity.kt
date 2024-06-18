@@ -36,12 +36,15 @@ class NavActivity : AppCompatActivity() {
         val scheduleFragment = ScheduleFragment().apply {
             arguments = bundle
         }
-//        val enrollFragment = EnrollFragment().apply {
-//            arguments = bundle
-//        }
+        val enrollFragment = EnrollFragment().apply {
+            arguments = bundle
+        }
 //        val profileFragment = ProfileFragment().apply {
 //            arguments = bundle
 //        }
+        val passFragment = PassFragment().apply {
+            arguments = bundle
+        }
 
         drawerLayout = findViewById(R.id.drawerLayout)
         val navView : NavigationView = findViewById(R.id.nav_view)
@@ -52,17 +55,19 @@ class NavActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        replaceFragment(scheduleFragment)
+        replaceFragment(scheduleFragment, getString(R.string.sched_title))
 
         navView.setNavigationItemSelectedListener {
 
             it.isChecked = true
 
             when(it.itemId){
-                R.id.nav_schedule -> replaceFragment(scheduleFragment)          // Schedule
-                R.id.nav_calendar -> replaceFragment(CalendarFragment())        // Calendar
-                R.id.nav_graduation -> replaceFragment(GraduationFragment())    // Faculty Eval.
-                R.id.nav_evaluation -> replaceFragment(EvaluationFragment())    // App. for Grad.
+                R.id.nav_schedule -> replaceFragment(scheduleFragment, getString(R.string.sched_title))
+                R.id.nav_calendar -> replaceFragment(CalendarFragment(), getString(R.string.calendar_title))
+                R.id.nav_graduation -> replaceFragment(GraduationFragment(), getString(R.string.grad_title))
+                R.id.nav_evaluation -> replaceFragment(EvaluationFragment(), getString(R.string.faculty_title))
+                R.id.nav_pass -> replaceFragment(passFragment, getString(R.string.password_title))
+                R.id.nav_enroll -> replaceFragment(enrollFragment, getString(R.string.enroll_title))
                 R.id.nav_logout -> {
                     val logoutIntent = Intent(this, MainActivity::class.java)
                     startActivity(logoutIntent)
@@ -72,11 +77,12 @@ class NavActivity : AppCompatActivity() {
         }
     }
 
-    private fun replaceFragment(fragment: Fragment){
+    private fun replaceFragment(fragment: Fragment, title: String){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frameLayout,fragment)
         fragmentTransaction.commit()
+        setTitle(title)
         drawerLayout.closeDrawers()
     }
 

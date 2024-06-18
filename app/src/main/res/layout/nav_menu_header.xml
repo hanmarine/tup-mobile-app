@@ -14,7 +14,7 @@
         android:id="@+id/tup_menu_title"
         android:paddingTop="30dp"
         android:textSize="20sp"
-        android:text="TUP Menu"
+        android:text="Menu"
         android:textColor="@color/tup_color"
         android:textStyle="bold"/>
 

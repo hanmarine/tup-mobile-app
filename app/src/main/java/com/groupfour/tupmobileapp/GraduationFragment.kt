@@ -31,6 +31,7 @@ class GraduationFragment : Fragment() {
         val selectMonths = view.findViewById<Spinner>(R.id.select_month)
         val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, months)
         selectMonths.adapter = arrayAdapter
+
         printBtn = view.findViewById(R.id.print_button)
         printBtn.setOnClickListener{
             Toast.makeText(requireContext(),"Your form has been printed.", Toast.LENGTH_SHORT).show()
