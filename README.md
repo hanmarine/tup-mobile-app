@@ -18,28 +18,28 @@
 <h2>📸 Screenshots</h2>
 <ul>
   <li>
-    <b>Login and Message Page</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/ade5d235-b566-45c3-b6b3-1f79b355581e)
+    <b>Login and Message Page</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/b23686b7-c6b8-457a-a70c-89fc7688431d">
   </li>
     <li>
-    <b>Calendar Page and Navigation Pane</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/51e10bfd-dfaf-46ef-8e0e-ff6c5791d0c0)
+    <b>Calendar Page and Navigation Pane</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/51e10bfd-dfaf-46ef-8e0e-ff6c5791d0c0">
   </li>
   <li>
-    <b>Enrollment and Grades Page</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/0b742af5-ca67-4b1d-be81-60d9557e9e5f)
+    <b>Enrollment and Grades Page</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/0b742af5-ca67-4b1d-be81-60d9557e9e5f">
   </li>
   <li>
-    <b>Faculty Evaluation and Application for Graduation</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/af2a8fdb-88e4-4547-a6fb-2192ebf30314)
+    <b>Faculty Evaluation and Application for Graduation</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/af2a8fdb-88e4-4547-a6fb-2192ebf30314">
   </li>
   <li>
-    <b>Profile Page</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/68e3a97c-876b-4d74-bfe9-66886dedfde4)
+    <b>Profile Page</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/68e3a97c-876b-4d74-bfe9-66886dedfde4">
   </li>
   <li>
-    <b>Schedule and Password Page</b><br>
-    ![image](https://github.com/hanmarine/tup-mobile-app/assets/129721252/f91f0b73-0118-43e8-988e-c32b39770cee)
+    <b>Schedule and Password Page</b><br><br>
+    <img src="https://github.com/hanmarine/tup-mobile-app/assets/129721252/f91f0b73-0118-43e8-988e-c32b39770cee">
   </li>
 </ul>
 
