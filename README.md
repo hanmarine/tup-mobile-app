@@ -10,6 +10,7 @@
 
 <h2>🔧 Tools used:</h2>
 <ul>
+  <li><b>Android Studio</b></li>
   <li><b>Extensive Markup Language (XML)</b> - for the graphical user interface (GUI) of the mobile application.</li>
   <li><b>Kotlin</b> - for the functionalities of the mobile application (e.g. retrieval and passing of data from one page to another and navigation pane).</li>
   <li><b>Firebase Realtime Database</b> - to integrate and handle a large amount of sample real-time data into the mobile application.</li>
