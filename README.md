@@ -42,7 +42,7 @@
   </li>
 </ul>
 
-<h2>📝 Important Note:</h2>
+<h2>Important Note:</h2>
 <ul>
   <li>This mobile application is in <b>partial development</b>, since Message, Faculty Evaluation, and Application for Graduation pages are placeholders.</li>
   <li>This application is <b>not the official TUP mobile application</b> as it doesn't have permission from the UITC to use the university's database (meaning the database used in this application only stores sample data).</li>
